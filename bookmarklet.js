@@ -7,7 +7,7 @@
 		let image = linkElem.querySelector("img").src;
 		let name = f.querySelector(".follows-recommendation-card__name").innerText;
 		let subheadline = f.querySelector(".follows-recommendation-card__headline").innerText;
-    let details = f.querySelector(".follows-recommendation-card__subtext").innerText;
+    let details = f.querySelector(".follows-recommendation-card__subtext") ? f.querySelector(".follows-recommendation-card__subtext").innterText : "";
     result.push({
       name: name,
       image: image,
